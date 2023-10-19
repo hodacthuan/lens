@@ -1,0 +1,21 @@
+{
+  "name": "kube-object-event-status",
+  "version": "6.1.0-latest.1675703536975.1675705376528",
+  "description": "Adds kube object status from events",
+  "renderer": "dist/renderer.js",
+  "lens": {
+    "metadata": {},
+    "styles": []
+  },
+  "scripts": {
+    "build": "npx webpack && npm pack",
+    "dev": "npx webpack -- --watch",
+    "test": "echo NO TESTS"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "devDependencies": {
+    "@k8slens/extensions": "file:../../src/extensions/npm/extensions"
+  }
+}

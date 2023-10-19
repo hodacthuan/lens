@@ -1,0 +1,22 @@
+{
+  "name": "lens-pod-menu",
+  "version": "6.1.0-latest.1675703536975.1675705376528",
+  "description": "Lens pod menu",
+  "renderer": "dist/renderer.js",
+  "lens": {
+    "metadata": {},
+    "styles": []
+  },
+  "scripts": {
+    "build": "npx webpack && npm pack",
+    "dev": "npx webpack -- --watch",
+    "test": "npx jest --passWithNoTests --env=jsdom src $@"
+  },
+  "files": [
+    "dist/**/*"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@k8slens/extensions": "file:../../src/extensions/npm/extensions"
+  }
+}

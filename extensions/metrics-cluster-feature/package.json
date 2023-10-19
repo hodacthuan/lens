@@ -1,0 +1,24 @@
+{
+  "name": "lens-metrics-cluster-feature",
+  "version": "6.1.0-latest.1675703536975.1675705376528",
+  "description": "Lens metrics cluster feature",
+  "renderer": "dist/renderer.js",
+  "lens": {
+    "metadata": {},
+    "styles": []
+  },
+  "scripts": {
+    "build": "npx webpack && npm pack",
+    "dev": "npx webpack -- --watch",
+    "test": "npx jest --passWithNoTests --env=jsdom src $@",
+    "clean": "rm -rf dist/ && rm *.tgz"
+  },
+  "files": [
+    "dist/**/*",
+    "resources/**/*"
+  ],
+  "devDependencies": {
+    "@k8slens/extensions": "file:../../src/extensions/npm/extensions",
+    "semver": "^7.3.2"
+  }
+}
